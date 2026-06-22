@@ -7,6 +7,20 @@
 */
 
 // Start coding here
+function sumAllValues(matrix) {
+    const arr = [];
+    let result = 0;
+    for(let i=0; i < matrix.length; i++ ) {
+        for(let j = 0; j < matrix.length; j++) {
+            arr.push(matrix[i][j]);  
+        } 
+    }   
+    for (let i=0; i < arr.length; i++){
+        result += arr[i];
+    }
+    return result;
+}
+
 
 const matrix = [
   [11, 25, 18],
